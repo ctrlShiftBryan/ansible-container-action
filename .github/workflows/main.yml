@@ -7,7 +7,7 @@ jobs:
     steps:
     - name: run the the container
       id: playbook
-      uses: 'ctrlShiftBryan/ansible-container-action@v1'
+      uses: 'ctrlShiftBryan/ansible-container-action@v1.1'
       with:
         playbook: 'playbook.yml'
     # Use the output from the `hello` step
