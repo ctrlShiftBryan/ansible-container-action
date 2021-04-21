@@ -1,0 +1,16 @@
+# action.yml
+name: 'ansible-container'
+description: 'An ansible container with docker inside.'
+inputs:
+  playbook:
+    description: 'The playbook the container should run'
+    required: true
+outputs:
+  time:
+    description: 'The time the playbook ran'
+runs:
+  using: 'docker'
+  image: 'docker://bryanarendt/ansible-container:latest'
+  args:
+    - ${{ inputs.playbook }}
+  entrypoint: 'entrypoint.sh'
