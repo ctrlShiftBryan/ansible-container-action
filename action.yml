@@ -13,4 +13,3 @@ runs:
   image: 'docker://bryanarendt/ansible-container:latest'
   args:
     - ${{ inputs.playbook }}
-  entrypoint: 'playbook.sh'
