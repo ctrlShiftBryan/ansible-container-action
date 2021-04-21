@@ -10,7 +10,7 @@ jobs:
 
     - name: run the the container test
       id: playbook
-      uses: 'ctrlShiftBryan/ansible-container-action@v1.9pre'
+      uses: 'ctrlShiftBryan/ansible-container-action@main'
       with:
         playbook: 'playbook.yml'
     # Use the output from the `hello` step
