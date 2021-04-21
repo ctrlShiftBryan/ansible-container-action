@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to run the ansible container
     steps:
-    - name: run the the container
+    - name: run the the container test
       id: playbook
       uses: 'ctrlShiftBryan/ansible-container-action@v1.6pre'
       with:
